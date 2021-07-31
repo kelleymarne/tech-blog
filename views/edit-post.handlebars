@@ -6,30 +6,31 @@
   <form class="edit-post-form">
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
+      <span>({{post.post_content}})</span>
     </div>
     <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    <button type="submit" class="btn btn-info">Save Post</button>
+
+    <button type="button" class="btn btn-danger delete-post-btn">Delete Post</button>
   </form>
 </article>
 
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
 
+
+<form class="comment-form">
+<div class="mb-3">
+  <label for="comment" class="form-label">Leave a Comment</label>
+  <textarea name="comment-body" class="form-control" id="comment-area" rows="3"></textarea>
+</div>
   <div>
-    <button type="submit">add comment</button>
+<button type="submit" class="btn btn-info">Add Comment</button>
   </div>
 </form>
 
 {{> comments post.comments}}
 
-{{!-- <script src="/javascript/edit-post.js"></script>
-<script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script> --}}
+<script src="../public/Javascript/edit-post.js"></script>
+<script src="../public/Javascript/delete-post.js"></script>
+<script src="../public/Javascript/comment.js"></script>
