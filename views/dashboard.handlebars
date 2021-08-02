@@ -17,9 +17,9 @@
 
 <hr>
 
-{{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
+{{#if posts.length}}
   <ol class="list-group">
     {{#each posts as |post|}}
     <li class="list-group-item">
@@ -28,7 +28,6 @@
     </li>
     {{/each}}
   </ol>
-</section>
 {{/if}}
-
-<script src="./Javascript/add-post.js"></script>
+</section>
+<script src="../Javascript/add-post.js"></script>

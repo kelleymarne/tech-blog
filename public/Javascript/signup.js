@@ -18,7 +18,7 @@ async function signupFormHandler(event) {
   
       if (response.ok) {
         console.log(response)
-        document.location.replace('/dashboard/');
+        document.location.replace('/');
         console.log('User Created');
       } else {
         alert(response.statusText);

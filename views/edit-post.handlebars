@@ -16,10 +16,11 @@
     <button type="button" class="btn btn-danger delete-post-btn">Delete Post</button>
   </form>
 </article>
+  <script src="/Javascript/edit-post.js"></script>
 
 
 
-<form class="comment-form">
+<form id="comment-form">
 <div class="mb-3">
   <label for="comment" class="form-label">Leave a Comment</label>
   <textarea name="comment-body" class="form-control" id="comment-area" rows="3"></textarea>
@@ -31,6 +32,5 @@
 
 {{> comments post.comments}}
 
-<script src="../public/Javascript/edit-post.js"></script>
-<script src="../public/Javascript/delete-post.js"></script>
-<script src="../public/Javascript/comment.js"></script>
+<script src="/Javascript/delete-post.js"></script>
+<script src="/Javascript/comment.js"></script>
