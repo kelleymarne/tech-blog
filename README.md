@@ -41,7 +41,7 @@ Though the large file tree made for a difficult navigation on the develop end, I
 
 <a href="https://github.com/kelleymarne/tech-blog">GitHub Repo</a>
 
-<a href="https://www.youtube.com/watch?v=eVGEea7adDM"> YouTube</a>
+<a href="https://techblog-ch14.herokuapp.com/"> Heroku Deploy</a>
 
 <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiLjJ7fosLvAhWXW80KHawRD_oQPAgI">Google</a>
 
